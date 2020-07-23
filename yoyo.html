@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div id="login-area">
+        <h1 class="text-center">Welcome to tha Aareal Bank AG</h1>
+        <div class="submit-area">
+            <!-- <h4>Login</h4>
+            <input type="email" class="login-field" >
+            <input type="password" name="" id="" class="login-field">
+            <button>Enter</button> -->
+           
+            <form>
+                <div class="form-group">
+                    <h4 >Login</h4>
+                    <br>
+                  <!-- <label for="exampleInputEmail1">Email address</label> -->
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or username">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="exampleInputPassword1">Password</label> -->
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out,if you fill up all the above informations.</label>
+                </div>
+                
+              </form>
+              <button id="enter" type="submit" class="btn btn-primary login-field">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <h3>Welcome to the transaction area</h3>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-12	col-md-12	col-lg-4 col-xl-4">
+                    <div class="deposite status">
+                        <h5>Deposit</h5>
+                    <h3>$ <span id="currentDeposit">00</span></h3>
+                    </div>
+                </div>
+                <div class="col-sm-12	col-md-12	col-lg-4 col-xl-4 ">
+                    <div class="withdraw status">
+                        <h5>withdraw</h5>
+                    <h3>$<span id="currentWithdraw">00</span></h3>
+                    </div>
+                </div>
+                <div class="col-sm-12	col-md-12	col-lg-4 col-xl-4 ">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                    <h3>$ <span id="currentBalance">00</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12	col-md-12	col-lg-6 col-xl-6">
+                   <div class="withdraw-amount status2">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1"><h3>Enter your withdraw amount</h3></label><br>
+                          <input type="number" class="form-control" id="withdrawAmount"  placeholder="$ amount you want to withdraw">
+                          <small id="emailHelp" class="form-text text-muted">The ammount will be reduced from your deposit</small>
+                        </div>
+                        
+                       
+                        
+                      </form>
+                      <button id="addWithdraw" type="submit" class="btn btn-primary">Withdraw</button>
+                   </div>
+                </div>
+                <div class="col-sm-12	col-md-12	col-lg-6 col-xl-6">
+                    <div class="deposit-amount status2">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1"><h3>Enter your deposit amount</h3></label><br>
+                              <input type="number" class="form-control" id="depositAmount"  placeholder="$ amount you want to deposit">
+                              <small id="emailHelp" class="form-text text-muted">Only 1000 or 500 notes will be deposited</small>
+                            </div>
+                            
+                            
+                            
+                          </form>
+                          <button id="addDeposit" type="submit" class="btn btn-primary">Deposit</button>
+
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
