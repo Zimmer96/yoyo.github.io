@@ -1,5 +1,13 @@
-body{
-    padding: 100px;
+@media only screen and (min-width: 600px){
+    .body{
+        padding: 30px;
+    }
+}
+@media only screen and (min-width: 768px){
+    body{
+        padding: 100px;
+    }
+
 }
 /* .bank-title{
     position: relative;
